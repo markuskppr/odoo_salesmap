@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_sales_map_lite_dashboard" model="ir.actions.client">
+        <field name="name">Sales Map</field>
+        <field name="tag">sales_map_lite.dashboard</field>
+        <!-- Own slug: "sales-map" stays reserved for the full module, so
+             both editions can coexist during a migration. -->
+        <field name="path">sales-map-lite</field>
+    </record>
+
+    <!-- Own component, own action: a full-page audit table, not a tab
+         squeezed into the map dashboard's side panel. -->
+    <record id="action_sales_map_lite_data_quality" model="ir.actions.client">
+        <field name="name">Data Quality</field>
+        <field name="tag">sales_map_lite.data_quality</field>
+        <field name="path">sales-map-lite-quality</field>
+    </record>
+
+    <menuitem id="menu_sales_map_lite_root"
+              name="Sales Map"
+              sequence="46"
+              groups="sales_team.group_sale_salesman"/>
+
+    <menuitem id="menu_sales_map_lite_dashboard"
+              name="Map"
+              parent="menu_sales_map_lite_root"
+              action="action_sales_map_lite_dashboard"
+              sequence="10"/>
+
+    <menuitem id="menu_sales_map_lite_data_quality"
+              name="Data Quality"
+              parent="menu_sales_map_lite_root"
+              action="action_sales_map_lite_data_quality"
+              sequence="20"/>
+
+</odoo>

@@ -1,0 +1,438 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sales_map_lite
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-09-02 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sales_map_lite
+msgid "%(count)s customers"
+msgstr "%(count)s Kunden"
+
+#. module: sales_map_lite
+msgid "%(count)s month"
+msgstr "%(count)s Monat"
+
+#. module: sales_map_lite
+msgid "%(count)s months"
+msgstr "%(count)s Monate"
+
+#. module: sales_map_lite
+msgid "%(count)s orders"
+msgstr "%(count)s Dokumente"
+
+#. module: sales_map_lite
+msgid "%(documents)s: %(scope)s"
+msgstr "%(documents)s: %(scope)s"
+
+#. module: sales_map_lite
+msgid "%(missing)s of %(total)s customers are missing a country and/or coordinates."
+msgstr "%(missing)s von %(total)s Kunden fehlt ein Land und/oder Koordinaten."
+
+#. module: sales_map_lite
+msgid "%(partners)s customer"
+msgstr "%(partners)s Kunde"
+
+#. module: sales_map_lite
+msgid "%(partners)s customers"
+msgstr "%(partners)s Kunden"
+
+#. module: sales_map_lite
+msgid "%(share)s% of revenue (%(amount)s, %(customers)s) could not be attributed to a region on this level. It is included in the totals above but missing from the map."
+msgstr "%(share)s% des Umsatzes (%(amount)s, %(customers)s) konnten auf dieser Ebene keiner Region zugeordnet werden. Der Betrag ist in den Summen oben enthalten, fehlt aber auf der Karte."
+
+#. module: sales_map_lite
+msgid "12 months"
+msgstr "12 Monate"
+
+#. module: sales_map_lite
+msgid "All time"
+msgstr "Gesamter Zeitraum"
+
+#. module: sales_map_lite
+msgid "Analysis failed"
+msgstr "Analyse fehlgeschlagen"
+
+#. module: sales_map_lite
+msgid "Change"
+msgstr "Veränderung"
+
+#. module: sales_map_lite
+msgid "Change vs. comparison"
+msgstr "Veränderung ggü. Vergleich"
+
+#. module: sales_map_lite
+msgid "Cities"
+msgstr "Städte"
+
+#. module: sales_map_lite
+msgid "City"
+msgstr "Stadt"
+
+#. module: sales_map_lite
+msgid "Classes"
+msgstr "Klassen"
+
+#. module: sales_map_lite
+msgid "Close"
+msgstr "Schließen"
+
+#. module: sales_map_lite
+msgid "Commercial parent"
+msgstr "Übergeordnetes Unternehmen"
+
+#. module: sales_map_lite
+msgid "Coordinates"
+msgstr "Koordinaten"
+
+#. module: sales_map_lite
+msgid "Countries"
+msgstr "Länder"
+
+#. module: sales_map_lite
+msgid "Country"
+msgstr "Land"
+
+#. module: sales_map_lite
+msgid "Customer"
+msgstr "Kunde"
+
+#. module: sales_map_lite
+msgid "Customer Invoices"
+msgstr "Kundenrechnungen"
+
+#. module: sales_map_lite
+msgid "Customers"
+msgstr "Kunden"
+
+#. module: sales_map_lite
+msgid "Customers: %s"
+msgstr "Kunden: %s"
+
+#. module: sales_map_lite
+#: model:ir.ui.menu,name:sales_map_lite.menu_sales_map_lite_data_quality
+#: model:ir.actions.client,name:sales_map_lite.action_sales_map_lite_data_quality
+msgid "Data Quality"
+msgstr "Datenqualität"
+
+#. module: sales_map_lite
+msgid "Delivery address"
+msgstr "Lieferadresse"
+
+#. module: sales_map_lite
+msgid "Documents"
+msgstr "Dokumente"
+
+#. module: sales_map_lite
+msgid "Drill down"
+msgstr "Tiefer einsteigen"
+
+#. module: sales_map_lite
+msgid "Drill-down path"
+msgstr "Navigationspfad"
+
+#. module: sales_map_lite
+msgid "End of period"
+msgstr "Ende des Zeitraums"
+
+#. module: sales_map_lite
+msgid "Equal intervals"
+msgstr "Gleiche Intervalle"
+
+#. module: sales_map_lite
+msgid "Europe: NUTS 1"
+msgstr "Europa: NUTS 1"
+
+#. module: sales_map_lite
+msgid "Europe: NUTS 2"
+msgstr "Europa: NUTS 2"
+
+#. module: sales_map_lite
+msgid "How the colour classes are formed"
+msgstr "Wie die Farbklassen gebildet werden"
+
+#. module: sales_map_lite
+msgid "Invoice address"
+msgstr "Rechnungsadresse"
+
+#. module: sales_map_lite
+msgid "Invoiced (net)"
+msgstr "Fakturiert (netto)"
+
+#. module: sales_map_lite
+msgid "Invoiced revenue (account.move.line via account.invoice.report)"
+msgstr "Fakturierter Umsatz (account.move.line über account.invoice.report)"
+
+#. module: sales_map_lite
+msgid "Last quarter"
+msgstr "Letztes Quartal"
+
+#. module: sales_map_lite
+msgid "Loading analysis …"
+msgstr "Analyse wird geladen …"
+
+#. module: sales_map_lite
+msgid "Loading boundaries …"
+msgstr "Grenzen werden geladen …"
+
+#. module: sales_map_lite
+msgid "M"
+msgstr "Mio."
+
+#. module: sales_map_lite
+#: model:ir.ui.menu,name:sales_map_lite.menu_sales_map_lite_dashboard
+msgid "Map"
+msgstr "Karte"
+
+#. module: sales_map_lite
+msgid "Map level"
+msgstr "Kartenebene"
+
+#. module: sales_map_lite
+msgid "Metric shown on the map"
+msgstr "Auf der Karte angezeigte Kennzahl"
+
+#. module: sales_map_lite
+msgid "Most common cause: contacts without a country on the address."
+msgstr "Häufigste Ursache: Kontakte ohne Land in der Adresse."
+
+#. module: sales_map_lite
+msgid "NUTS levels need customer coordinates (geolocated contacts); the country level works from the address country alone."
+msgstr "NUTS-Ebenen benötigen Kundenkoordinaten (geolokalisierte Kontakte); die Länderebene funktioniert allein anhand des Adresslands."
+
+#. module: sales_map_lite
+msgid "Net revenue in period"
+msgstr "Nettoumsatz im Zeitraum"
+
+#. module: sales_map_lite
+msgid "No comparison"
+msgstr "Kein Vergleich"
+
+#. module: sales_map_lite
+msgid "No customers found."
+msgstr "Keine Kunden gefunden."
+
+#. module: sales_map_lite
+msgid "No map basis available"
+msgstr "Keine Kartengrundlage verfügbar"
+
+#. module: sales_map_lite
+msgid "No readable revenue source found (account.invoice.report, sale.report, sale.order)."
+msgstr "Keine lesbare Umsatzquelle gefunden (account.invoice.report, sale.report, sale.order)."
+
+#. module: sales_map_lite
+msgid "No revenue documents were found on this database for the selected basis (%(basis)s). The map stays empty until sales orders or invoices exist."
+msgstr "Für die gewählte Basis (%(basis)s) wurden in dieser Datenbank keine Umsatzbelege gefunden. Die Karte bleibt leer, bis Verkaufsaufträge oder Rechnungen vorhanden sind."
+
+#. module: sales_map_lite
+msgid "No revenue in the selected period."
+msgstr "Kein Umsatz im gewählten Zeitraum."
+
+#. module: sales_map_lite
+msgid "No revenue in the selected period. Widen the period below."
+msgstr "Kein Umsatz im gewählten Zeitraum. Zeitraum unten vergrößern."
+
+#. module: sales_map_lite
+msgid "Open the underlying customer invoices"
+msgstr "Zugrunde liegende Kundenrechnungen öffnen"
+
+#. module: sales_map_lite
+msgid "Open the underlying customers"
+msgstr "Zugrunde liegende Kunden öffnen"
+
+#. module: sales_map_lite
+msgid "Open the underlying sales orders"
+msgstr "Zugrunde liegende Verkaufsaufträge öffnen"
+
+#. module: sales_map_lite
+msgid "Order intake (net)"
+msgstr "Auftragseingang (netto)"
+
+#. module: sales_map_lite
+msgid "Order intake (sale.order via sale.report)"
+msgstr "Auftragseingang (sale.order über sale.report)"
+
+#. module: sales_map_lite
+msgid "Order intake (sale.order)"
+msgstr "Auftragseingang (sale.order)"
+
+#. module: sales_map_lite
+msgid "Pause"
+msgstr "Pause"
+
+#. module: sales_map_lite
+msgid "Play: move the selected window through time"
+msgstr "Abspielen: den gewählten Zeitraum automatisch durch die Zeit bewegen"
+
+#. module: sales_map_lite
+msgid "Previous period"
+msgstr "Vorherige Periode"
+
+#. module: sales_map_lite
+msgid "Quantiles (equal group size)"
+msgstr "Quantile (gleiche Gruppengröße)"
+
+#. module: sales_map_lite
+msgid "Region"
+msgstr "Region"
+
+#. module: sales_map_lite
+msgid "Regions"
+msgstr "Regionen"
+
+#. module: sales_map_lite
+msgid "Reset view"
+msgstr "Ansicht zurücksetzen"
+
+#. module: sales_map_lite
+msgid "Revenue"
+msgstr "Umsatz"
+
+#. module: sales_map_lite
+msgid "Revenue share"
+msgstr "Umsatzanteil"
+
+#. module: sales_map_lite
+#: model:ir.ui.menu,name:sales_map_lite.menu_sales_map_lite_root
+#: model:ir.actions.client,name:sales_map_lite.action_sales_map_lite_dashboard
+msgid "Sales Map"
+msgstr "Vertriebskarte"
+
+#. module: sales_map_lite
+msgid "Sales Orders"
+msgstr "Verkaufsaufträge"
+
+#. module: sales_map_lite
+msgid "Same period last year"
+msgstr "Gleicher Zeitraum letztes Jahr"
+
+#. module: sales_map_lite
+msgid "Share"
+msgstr "Anteil"
+
+#. module: sales_map_lite
+msgid "Show customer locations as proportional circles"
+msgstr "Kundenstandorte als proportionale Kreise anzeigen"
+
+#. module: sales_map_lite
+msgid "Source:"
+msgstr "Quelle:"
+
+#. module: sales_map_lite
+msgid "Start of period"
+msgstr "Beginn des Zeitraums"
+
+#. module: sales_map_lite
+msgid "Target"
+msgstr "Ziel"
+
+#. module: sales_map_lite
+msgid "The analysis could not be loaded"
+msgstr "Die Analyse konnte nicht geladen werden"
+
+#. module: sales_map_lite
+msgid "The boundaries could not be loaded (%s)."
+msgstr "Die Grenzen konnten nicht geladen werden (%s)."
+
+#. module: sales_map_lite
+msgid "The delivery address is not available on this data source; the invoice address is used."
+msgstr "Die Lieferadresse steht bei dieser Datenquelle nicht zur Verfügung; es wird die Rechnungsadresse verwendet."
+
+#. module: sales_map_lite
+msgid "The selected revenue basis is not readable with your permissions; figures from the other basis are shown and labeled below."
+msgstr "Die gewählte Umsatzbasis ist mit Ihren Berechtigungen nicht lesbar; es werden stattdessen die unten gekennzeichneten Zahlen der anderen Basis angezeigt."
+
+#. module: sales_map_lite
+msgid "Total revenue"
+msgstr "Gesamtumsatz"
+
+#. module: sales_map_lite
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#. module: sales_map_lite
+msgid "Unknown customer"
+msgstr "Unbekannter Kunde"
+
+#. module: sales_map_lite
+msgid "Which address decides where revenue is counted"
+msgstr "Welche Adresse entscheidet, wo der Umsatz gezählt wird"
+
+#. module: sales_map_lite
+msgid "Which documents count as revenue"
+msgstr "Welche Belege als Umsatz zählen"
+
+#. module: sales_map_lite
+msgid "Which period the figures are compared against"
+msgstr "Mit welchem Zeitraum die Zahlen verglichen werden"
+
+#. module: sales_map_lite
+msgid "World"
+msgstr "Welt"
+
+#. module: sales_map_lite
+msgid "Year to date"
+msgstr "Laufendes Jahr"
+
+#. module: sales_map_lite
+msgid "Zoom in"
+msgstr "Vergrößern"
+
+#. module: sales_map_lite
+msgid "Zoom out"
+msgstr "Verkleinern"
+
+#. module: sales_map_lite
+msgid "bn"
+msgstr "Mrd."
+
+#. module: sales_map_lite
+msgid "compared against"
+msgstr "verglichen mit"
+
+#. module: sales_map_lite
+msgid "k"
+msgstr "Tsd."
+
+#. module: sales_map_lite
+msgid "missing"
+msgstr "fehlt"
+
+#. module: sales_map_lite
+msgid "net (untaxed) amounts, company currency, converted at document-date rates"
+msgstr "netto (unversteuerte) Beträge, Firmenwährung, umgerechnet zum Kurs des Belegdatums"
+
+#. module: sales_map_lite
+msgid "new"
+msgstr "neu"
+
+#. module: sales_map_lite
+msgid "no revenue"
+msgstr "kein Umsatz"
+
+#. module: sales_map_lite
+msgid "no revenue in the selected period"
+msgstr "kein Umsatz im gewählten Zeitraum"
+
+#. module: sales_map_lite
+msgid "vs. comparison period"
+msgstr "ggü. Vergleichszeitraum"
+
+#. module: sales_map_lite
+msgid "vs. last year"
+msgstr "ggü. Vorjahr"
+
+#. module: sales_map_lite
+msgid "vs. prev. period"
+msgstr "ggü. Vorperiode"
+

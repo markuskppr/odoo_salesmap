@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- Service products: no stock/delivery workflow to worry about, so the
+         demo orders below stay simple sale + invoice documents. -->
+    <record id="demo_product_onboarding" model="product.product">
+        <field name="name">Onboarding &amp; Setup</field>
+        <field name="type">service</field>
+        <field name="list_price">900.0</field>
+        <field name="sale_ok" eval="True"/>
+    </record>
+
+    <record id="demo_product_license" model="product.product">
+        <field name="name">Standard License - Annual</field>
+        <field name="type">service</field>
+        <field name="list_price">2400.0</field>
+        <field name="sale_ok" eval="True"/>
+    </record>
+
+    <record id="demo_product_support" model="product.product">
+        <field name="name">Premium Support Package</field>
+        <field name="type">service</field>
+        <field name="list_price">600.0</field>
+        <field name="sale_ok" eval="True"/>
+    </record>
+
+    <record id="demo_product_consulting" model="product.product">
+        <field name="name">Professional Services (Day Rate)</field>
+        <field name="type">service</field>
+        <field name="list_price">350.0</field>
+        <field name="sale_ok" eval="True"/>
+    </record>
+
+</odoo>

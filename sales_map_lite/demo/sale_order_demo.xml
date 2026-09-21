@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="demo_order_0001" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=1)).replace(day=24, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0002" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gb_london"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=1)).replace(day=4, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0003" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=1)).replace(day=3, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0004" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_sf"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=2)).replace(day=21, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0005" model="sale.order">
+        <field name="partner_id" ref="demo_partner_au_sydney"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=2)).replace(day=1, hour=10).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0006" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ch_zurich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=2)).replace(day=11, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0007" model="sale.order">
+        <field name="partner_id" ref="demo_partner_it_rome"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=2)).replace(day=12, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 3, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0008" model="sale.order">
+        <field name="partner_id" ref="demo_partner_dk_copenhagen"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=3)).replace(day=4, hour=14).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 4, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0009" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ro_bucharest"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=3)).replace(day=20, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0010" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=3)).replace(day=8, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 4, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0011" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_hamburg"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=3)).replace(day=13, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0012" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_lyon"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=3)).replace(day=22, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0013" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gb_london"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=3)).replace(day=8, hour=10).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 3, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 3, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0014" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_lyon"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=4)).replace(day=22, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 4, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0015" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=4)).replace(day=26, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0016" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_sf"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=4)).replace(day=11, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 2, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0017" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_marseille"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=4)).replace(day=5, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 2, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0018" model="sale.order">
+        <field name="partner_id" ref="demo_partner_nl_amsterdam"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=4)).replace(day=12, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0019" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ch_zurich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=4)).replace(day=2, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 4, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0020" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=4)).replace(day=14, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 2, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0021" model="sale.order">
+        <field name="partner_id" ref="demo_partner_at_vienna"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=5)).replace(day=17, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 3, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0022" model="sale.order">
+        <field name="partner_id" ref="demo_partner_dk_copenhagen"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=5)).replace(day=25, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0023" model="sale.order">
+        <field name="partner_id" ref="demo_partner_be_brussels"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=5)).replace(day=6, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0024" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ch_zurich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=5)).replace(day=6, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 4, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0025" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ro_bucharest"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=5)).replace(day=17, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0026" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ch_zurich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=5)).replace(day=6, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0027" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=5)).replace(day=4, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0028" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ie_dublin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=6)).replace(day=3, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 4, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'}), (0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0029" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_frankfurt"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=6)).replace(day=22, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0030" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fi_helsinki"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=6)).replace(day=14, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0031" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=6)).replace(day=21, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0032" model="sale.order">
+        <field name="partner_id" ref="demo_partner_it_rome"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=7)).replace(day=1, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0033" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_munich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=7)).replace(day=23, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0034" model="sale.order">
+        <field name="partner_id" ref="demo_partner_it_rome"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=7)).replace(day=3, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 3, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0035" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_lyon"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=8)).replace(day=18, hour=10).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 4, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 2, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0036" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_paris"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=8)).replace(day=4, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0037" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gb_london"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=8)).replace(day=2, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 3, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0038" model="sale.order">
+        <field name="partner_id" ref="demo_partner_it_rome"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=8)).replace(day=26, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0039" model="sale.order">
+        <field name="partner_id" ref="demo_partner_dk_copenhagen"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=8)).replace(day=15, hour=10).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0040" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_munich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=8)).replace(day=15, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 3, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0041" model="sale.order">
+        <field name="partner_id" ref="demo_partner_unknown_1"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=9)).replace(day=1, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0042" model="sale.order">
+        <field name="partner_id" ref="demo_partner_pl_warsaw"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=9)).replace(day=16, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0043" model="sale.order">
+        <field name="partner_id" ref="demo_partner_it_milan"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=9)).replace(day=9, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 3, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0044" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gb_london"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=9)).replace(day=26, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0045" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_munich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=9)).replace(day=19, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0046" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_munich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=9)).replace(day=19, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0047" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_munich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=9)).replace(day=6, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0048" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ie_dublin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=10)).replace(day=8, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0049" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=10)).replace(day=19, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0050" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=10)).replace(day=23, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0051" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=11)).replace(day=21, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0052" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gr_athens"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=11)).replace(day=19, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0053" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_marseille"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=11)).replace(day=5, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0054" model="sale.order">
+        <field name="partner_id" ref="demo_partner_es_madrid"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=11)).replace(day=6, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 3, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0055" model="sale.order">
+        <field name="partner_id" ref="demo_partner_es_barcelona"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=12)).replace(day=22, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0056" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_hamburg"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=12)).replace(day=24, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0057" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fi_helsinki"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=12)).replace(day=7, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0058" model="sale.order">
+        <field name="partner_id" ref="demo_partner_pl_warsaw"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=12)).replace(day=9, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 4, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0059" model="sale.order">
+        <field name="partner_id" ref="demo_partner_es_madrid"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=12)).replace(day=2, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 3, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0060" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_marseille"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=12)).replace(day=6, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 3, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0061" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_frankfurt"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=12)).replace(day=18, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0062" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=13)).replace(day=10, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0063" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=13)).replace(day=8, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 2, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0064" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gb_london"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=13)).replace(day=5, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0065" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=13)).replace(day=6, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 4, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0066" model="sale.order">
+        <field name="partner_id" ref="demo_partner_it_milan"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=14)).replace(day=2, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 4, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0067" model="sale.order">
+        <field name="partner_id" ref="demo_partner_at_vienna"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=14)).replace(day=12, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0068" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=14)).replace(day=7, hour=14).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 4, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0069" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ch_zurich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=15)).replace(day=9, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0070" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_paris"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=15)).replace(day=19, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0071" model="sale.order">
+        <field name="partner_id" ref="demo_partner_be_brussels"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=15)).replace(day=12, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0072" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=16)).replace(day=23, hour=14).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0073" model="sale.order">
+        <field name="partner_id" ref="demo_partner_be_brussels"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=16)).replace(day=3, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 3, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0074" model="sale.order">
+        <field name="partner_id" ref="demo_partner_es_barcelona"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=16)).replace(day=17, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 3, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0075" model="sale.order">
+        <field name="partner_id" ref="demo_partner_pt_lisbon"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=16)).replace(day=5, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 3, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0076" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gr_athens"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=16)).replace(day=19, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0077" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ca_toronto"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=17)).replace(day=19, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 2, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0078" model="sale.order">
+        <field name="partner_id" ref="demo_partner_be_brussels"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=17)).replace(day=22, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0079" model="sale.order">
+        <field name="partner_id" ref="demo_partner_se_stockholm"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=17)).replace(day=22, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 4, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0080" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ch_zurich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=17)).replace(day=8, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0081" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=17)).replace(day=2, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 3, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0082" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ie_dublin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=17)).replace(day=7, hour=14).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 3, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0083" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ch_zurich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=18)).replace(day=25, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 4, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 3, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0084" model="sale.order">
+        <field name="partner_id" ref="demo_partner_se_stockholm"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=18)).replace(day=15, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0085" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_frankfurt"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=18)).replace(day=26, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 2, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0086" model="sale.order">
+        <field name="partner_id" ref="demo_partner_be_brussels"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=19)).replace(day=27, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 4, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0087" model="sale.order">
+        <field name="partner_id" ref="demo_partner_be_brussels"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=19)).replace(day=9, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 3, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0088" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_marseille"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=19)).replace(day=9, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0089" model="sale.order">
+        <field name="partner_id" ref="demo_partner_es_madrid"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=19)).replace(day=11, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0090" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_lyon"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=19)).replace(day=13, hour=10).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0091" model="sale.order">
+        <field name="partner_id" ref="demo_partner_nl_amsterdam"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=19)).replace(day=11, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 4, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0092" model="sale.order">
+        <field name="partner_id" ref="demo_partner_nl_amsterdam"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=19)).replace(day=13, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 2, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0093" model="sale.order">
+        <field name="partner_id" ref="demo_partner_it_rome"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=20)).replace(day=10, hour=14).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0094" model="sale.order">
+        <field name="partner_id" ref="demo_partner_be_brussels"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=20)).replace(day=16, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 3, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 4, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0095" model="sale.order">
+        <field name="partner_id" ref="demo_partner_nl_amsterdam"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=20)).replace(day=24, hour=10).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'}), (0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0096" model="sale.order">
+        <field name="partner_id" ref="demo_partner_cz_prague"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=21)).replace(day=19, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0097" model="sale.order">
+        <field name="partner_id" ref="demo_partner_at_vienna"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=21)).replace(day=6, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0098" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_lyon"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=21)).replace(day=15, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0099" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ch_zurich"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=21)).replace(day=27, hour=14).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0100" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=21)).replace(day=24, hour=16).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0101" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=21)).replace(day=3, hour=8).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 1, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0102" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gr_athens"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=22)).replace(day=5, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 3, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0103" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_hamburg"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=22)).replace(day=19, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 2, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0104" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fi_helsinki"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=22)).replace(day=24, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0105" model="sale.order">
+        <field name="partner_id" ref="demo_partner_de_berlin"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=23)).replace(day=10, hour=17).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0106" model="sale.order">
+        <field name="partner_id" ref="demo_partner_cz_prague"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=23)).replace(day=23, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 4, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0107" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_newyork"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=23)).replace(day=20, hour=9).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0108" model="sale.order">
+        <field name="partner_id" ref="demo_partner_be_brussels"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=23)).replace(day=22, hour=13).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0109" model="sale.order">
+        <field name="partner_id" ref="demo_partner_unknown_2"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=23)).replace(day=14, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0110" model="sale.order">
+        <field name="partner_id" ref="demo_partner_ro_bucharest"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=23)).replace(day=27, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0111" model="sale.order">
+        <field name="partner_id" ref="demo_partner_gb_london"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=23)).replace(day=17, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 4, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_license'), 'product_uom_qty': 3, 'price_unit': 2400.0, 'name': 'Standard License - Annual'})]"/>
+    </record>
+
+    <record id="demo_order_0112" model="sale.order">
+        <field name="partner_id" ref="demo_partner_es_madrid"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=24)).replace(day=11, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0113" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_marseille"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=24)).replace(day=25, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'}), (0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 4, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0114" model="sale.order">
+        <field name="partner_id" ref="demo_partner_es_barcelona"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=24)).replace(day=6, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 4, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0115" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_marseille"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=24)).replace(day=11, hour=12).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 2, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'})]"/>
+    </record>
+
+    <record id="demo_order_0116" model="sale.order">
+        <field name="partner_id" ref="demo_partner_fr_paris"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=24)).replace(day=3, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 4, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'}), (0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 1, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+    <record id="demo_order_0117" model="sale.order">
+        <field name="partner_id" ref="demo_partner_us_sf"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=24)).replace(day=16, hour=15).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_onboarding'), 'product_uom_qty': 1, 'price_unit': 900.0, 'name': 'Onboarding &amp; Setup'}), (0, 0, {'product_id': ref('demo_product_consulting'), 'product_uom_qty': 1, 'price_unit': 350.0, 'name': 'Professional Services (Day Rate)'})]"/>
+    </record>
+
+    <record id="demo_order_0118" model="sale.order">
+        <field name="partner_id" ref="demo_partner_nl_amsterdam"/>
+        <field name="date_order" eval="(context_today() - relativedelta(months=24)).replace(day=23, hour=11).strftime('%Y-%m-%d %H:%M:%S')"/>
+        <field name="state">sale</field>
+        <field name="order_line" eval="[(0, 0, {'product_id': ref('demo_product_support'), 'product_uom_qty': 2, 'price_unit': 600.0, 'name': 'Premium Support Package'})]"/>
+    </record>
+
+</odoo>

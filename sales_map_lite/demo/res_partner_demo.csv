@@ -1,0 +1,33 @@
+id,name,is_company,customer_rank,street,city,zip,country_id/id,partner_latitude,partner_longitude,email
+sales_map_lite.demo_partner_de_berlin,Nordwind Systems GmbH,1,1,Alexanderplatz 1,Berlin,10178,base.de,52.5200,13.4050,contact@nordwind-systems.example
+sales_map_lite.demo_partner_de_munich,Bavaria Präzisionstechnik AG,1,1,Marienplatz 8,München,80331,base.de,48.1351,11.5820,info@bavaria-praezision.example
+sales_map_lite.demo_partner_de_hamburg,Hanseatic Trading Co,1,1,Speicherstadt 12,Hamburg,20457,base.de,53.5511,9.9937,sales@hanseatic-trading.example
+sales_map_lite.demo_partner_de_frankfurt,Main Finance Solutions,1,1,Zeil 45,Frankfurt am Main,60313,base.de,50.1109,8.6821,office@main-finance.example
+sales_map_lite.demo_partner_fr_paris,Société Lumière SARL,1,1,12 Rue de Rivoli,Paris,75004,base.fr,48.8566,2.3522,contact@lumiere-sarl.example
+sales_map_lite.demo_partner_fr_lyon,Rhône Industries,1,1,5 Place Bellecour,Lyon,69002,base.fr,45.7640,4.8357,info@rhone-industries.example
+sales_map_lite.demo_partner_fr_marseille,Méditerranée Logistique,1,1,20 La Canebière,Marseille,13001,base.fr,43.2965,5.3698,contact@med-logistique.example
+sales_map_lite.demo_partner_es_madrid,Ibérica Consultores S.L.,1,1,Gran Vía 28,Madrid,28013,base.es,40.4168,-3.7038,info@iberica-consultores.example
+sales_map_lite.demo_partner_es_barcelona,Catalunya Digital S.L.,1,1,Passeig de Gràcia 50,Barcelona,08007,base.es,41.3874,2.1686,hello@catalunya-digital.example
+sales_map_lite.demo_partner_it_rome,Roma Servizi Professionali,1,1,Via del Corso 10,Roma,00186,base.it,41.9028,12.4964,info@roma-servizi.example
+sales_map_lite.demo_partner_it_milan,Lombardia Manifattura S.p.A.,1,1,Corso Buenos Aires 3,Milano,20124,base.it,45.4642,9.1900,contact@lombardia-manifattura.example
+sales_map_lite.demo_partner_nl_amsterdam,Amstel Handel B.V.,1,1,Damrak 70,Amsterdam,1012 LM,base.nl,52.3676,4.9041,sales@amstel-handel.example
+sales_map_lite.demo_partner_be_brussels,Bruxelles Négoce SA,1,1,Rue Neuve 25,Bruxelles,1000,base.be,50.8503,4.3517,info@bruxelles-negoce.example
+sales_map_lite.demo_partner_at_vienna,Wiener Beratung GmbH,1,1,Kärntner Straße 15,Wien,1010,base.at,48.2082,16.3738,office@wiener-beratung.example
+sales_map_lite.demo_partner_pl_warsaw,Warszawa Technologie Sp. z o.o.,1,1,ul. Marszałkowska 100,Warszawa,00-026,base.pl,52.2297,21.0122,kontakt@warszawa-tech.example
+sales_map_lite.demo_partner_se_stockholm,Nordiska Konsult AB,1,1,Drottninggatan 50,Stockholm,111 21,base.se,59.3293,18.0686,info@nordiska-konsult.example
+sales_map_lite.demo_partner_dk_copenhagen,København Innovation ApS,1,1,Strøget 12,København,1160,base.dk,55.6761,12.5683,contact@cph-innovation.example
+sales_map_lite.demo_partner_pt_lisbon,Lisboa Comércio Lda,1,1,Rua Augusta 100,Lisboa,1100-053,base.pt,38.7223,-9.1393,geral@lisboa-comercio.example
+sales_map_lite.demo_partner_ie_dublin,Dublin Digital Ltd,1,1,Grafton Street 5,Dublin,D02,base.ie,53.3498,-6.2603,info@dublin-digital.example
+sales_map_lite.demo_partner_cz_prague,Praha Obchod s.r.o.,1,1,Václavské náměstí 20,Praha,110 00,base.cz,50.0755,14.4378,info@praha-obchod.example
+sales_map_lite.demo_partner_fi_helsinki,Helsinki Ratkaisut Oy,1,1,Aleksanterinkatu 15,Helsinki,00100,base.fi,60.1699,24.9384,info@helsinki-ratkaisut.example
+sales_map_lite.demo_partner_gr_athens,Athina Emporio AE,1,1,Ermou 30,Athina,10563,base.gr,37.9838,23.7275,info@athina-emporio.example
+sales_map_lite.demo_partner_ro_bucharest,București Servicii SRL,1,1,Calea Victoriei 40,București,010063,base.ro,44.4268,26.1025,contact@bucuresti-servicii.example
+sales_map_lite.demo_partner_us_newyork,Manhattan Global Inc,1,1,5th Avenue 350,New York,10118,base.us,40.7128,-74.0060,sales@manhattan-global.example
+sales_map_lite.demo_partner_us_sf,Golden Gate Software Inc,1,1,Market Street 500,San Francisco,94105,base.us,37.7749,-122.4194,info@goldengate-software.example
+sales_map_lite.demo_partner_gb_london,London Trading PLC,1,1,Oxford Street 200,London,W1D 1NU,base.gb,51.5074,-0.1278,contact@london-trading.example
+sales_map_lite.demo_partner_ch_zurich,Zürich Handels AG,1,1,Bahnhofstrasse 30,Zürich,8001,base.ch,47.3769,8.5417,info@zuerich-handels.example
+sales_map_lite.demo_partner_ca_toronto,Toronto Ventures Inc,1,1,Bay Street 100,Toronto,M5J 2T3,base.ca,43.6532,-79.3832,info@toronto-ventures.example
+sales_map_lite.demo_partner_au_sydney,Sydney Harbour Trading Pty Ltd,1,1,George Street 50,Sydney,2000,base.au,-33.8688,151.2093,contact@sydney-harbour.example
+sales_map_lite.demo_partner_br_saopaulo,São Paulo Comércio Ltda,1,1,Avenida Paulista 1000,São Paulo,01310-100,base.br,-23.5505,-46.6333,contato@saopaulo-comercio.example
+sales_map_lite.demo_partner_unknown_1,Legacy Import Customer,1,1,,,,,,,
+sales_map_lite.demo_partner_unknown_2,Unknown Origin Trading Ltd,1,1,,,,,,,
