@@ -1,0 +1,5 @@
+.DS_Store
+*.zip
+~$*.xlsx
+__pycache__/
+*.pyc
